@@ -1,0 +1,131 @@
+body{
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  line-height: 2;
+  color: white;
+}
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: linear-gradient(25deg, black,lightgray,black);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+h1{
+  font-weight: 50px;
+  line-height: 1;
+  color:Black;
+}
+p{
+  margin-top:0;
+  margin-bottom: 0.5rem;
+}
+label{
+  display: block;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+input,button,select,textarea{
+  margin:0;
+  font-family: inherit;
+  line-height: inherit;
+  font-size: inherit;
+}
+button{
+  border: none;
+}
+.container{
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+@media(min-width: 576px){
+  .container{
+    max-width: 540px;
+  }
+}
+@media(min-width: 760px){
+  .container{
+    max-width: 720px;
+  }
+}
+.header{
+  font-style: bold;
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+  text-shadow: 1px 1px 1px rgba(0,0,0,1);
+}
+.description{
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+  color: black;
+}
+.text-center{
+  text-align: center;
+}
+form{
+  background: black;
+  padding: 2.5rem 2.5rem;
+  border-radius: 1rem;
+}
+.form-control{
+  display: block;
+  width: 100%;
+  height: 2.3rem;
+  padding: 0.475rem 0.299rem;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 0.25rem;
+  }
+.form-control:focus{
+  border-color: #000;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+input:focus{
+  background-color: black;
+  color: white;
+}
+textarea:focus{
+  background-color: black;
+  color: white;
+}
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  width: 50%;
+  padding: 0.75rem;
+  margin: 10px auto;
+  background: green;
+  color: inherit;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.copywrites{
+  font-family: 'Lato';
+  color: black;
+  text-align: center;
+  border-radius:10px;
+  margin: 0px auto;
+}

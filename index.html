@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html class="Styles.css">
+  <link rel="stylesheet" href="Styles.css">
+<div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Students Survey Form</h1>
+      <p id="description" class= "description text-center">
+        Thanks for landing here! Hope you'll submit the form Genuinely.
+      </p>
+    </header>
+    <form id= "survey-form" action="mailto:worthwhileblogs@gmail.com" method="post" enctype="text/plain">
+      <div class = "form-group">
+        <label id= "name-label" for="name"> Name</label>
+        <input
+               type= "text"
+               name="name"
+               id="name"
+               class="form-control"
+               placeholder= "Enter your name"
+               required/>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+               type="email"
+               name="email"
+               id="email"
+               class="form-control"
+               placeholder= "Enter your Email"
+               required/>
+      </div>
+        <div class="form-group">
+          <label id= "number-label" for= "number">Age<span class="clue">(optional)</span></label>
+          <input 
+                 type= "number"
+                 name="age"
+                 id="number"
+                 min="10"
+                 max="30"
+                 class="form-control"
+                 placeholder="Age"/>
+      </div>
+      <div class="form-group">
+        <p> Which option best describes your current position?</p>
+        <select id= "dropdown" name="position"
+        class="form-control" required>
+        <option disabled selected value> Select current role</option>
+        <option value= "School student">School Student</option>
+        <option value="College student">College Student</option>
+        <option value="UG student">UG  Student</option>
+        <option value="PG"> PG Student</option>
+        <option value="part time">Part Time Job</option>
+        <option value="full time">FULL Time Job</option>
+        <option value"not to say"> Prefer Not to Say</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p> What is Tech are you Interested In?
+        </p>
+        <label>
+          <input
+                 name="prefer"
+                 value="Fron-End"
+                 type="checkbox"
+                 class="input-checkbox"/>Front-End</label>
+        <label>
+          <input
+                 name="prefer"
+                 value="Back-End"
+                 type="checkbox"
+                 class="input-checkbox"/>Back-End</label>
+        <label>
+          <input
+                 name="prefer"
+                 value="Blockchain-Tech"
+                 type="checkbox"
+                 class="input-checkbox"/>BlockChain Tech</label>
+        <label>
+          <input
+                 name="prefer"
+                 value="WEB3.0"
+                 type="checkbox"
+                 class="input-checkbox"/>WEB3.0</label>
+        <label>
+          <input
+                 name="prefer"
+                 type="checkbox"
+                 value="Data-scientist"
+                 class="input-checkbox"/>Data Scientist</label>
+        <label>
+          <input
+                 name="prefer"
+                 type="checkbox"
+                 name="Other"
+                 class="input-checkbox"/>Other</label>
+      </div>
+       <div class="form-group">
+        <p> Would you recommend this form to your friend</p>
+        <label>
+          <input
+          name="user-recommend"
+          value="No"
+          type="radio"
+          class="input-radio"
+                 checked/>Yes</label>
+        <label>
+          <input
+                 name="user-recommend"
+                 value="No"
+                 type="radio"
+                 class="input-radio"/>No</label>
+      </div>
+      <div class="form-group">
+           <p>Tell about Yourself</p>
+        <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="comments"
+                  rows="3" cols="3" 
+                  placeholder=" Enter here..."></textarea>
+      </div>
+      <div class="form-group">
+           <button type="submit" id="submit" class="submit-button">
+             Submit</button>
+      </div>
+    </form>
+  </div>
+  <footer class="copywrites">
+    <p>&copy;SumanthChandana</p>
+  </footer>
+  </html>
