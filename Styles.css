@@ -4,6 +4,7 @@ body{
   line-height: 2;
   color: white;
 }
+/*psuedo element for before the body element*/
 body::before {
   content: '';
   position: fixed;
@@ -45,11 +46,13 @@ button{
   width: 100%;
   margin: 3.125rem auto 0 auto;
 }
+/*media query for viewport width of min of 576px(ideally a mobile)*/
 @media(min-width: 576px){
   .container{
     max-width: 540px;
   }
 }
+/*Ideal min viewport of a tablet*/
 @media(min-width: 760px){
   .container{
     max-width: 720px;
